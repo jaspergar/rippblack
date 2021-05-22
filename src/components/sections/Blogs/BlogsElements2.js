@@ -30,7 +30,7 @@ overflow:hidden;
 
 
 
-export const BgImage = styled(Img)`
+export const BgImage = styled.img`
  position:absolute;
  width:100%;
  height:100%;
