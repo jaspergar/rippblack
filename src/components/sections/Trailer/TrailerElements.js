@@ -94,6 +94,7 @@ export const ImageTrailer = styled(Img)`
   `
 
   export const VideoPlayer = styled.div`
+    ${'' /* padding:7rem 0; */}
     width:100vw;
     height:100%;
     display:flex;
@@ -111,9 +112,11 @@ export const ImageTrailer = styled(Img)`
   `
   export const Source = styled.video`
     position:relative;
-    padding:7rem 0;
+    ${'' /* width:100%; */}
+    padding:5rem 0;
     ${'' /* max-width:900px; */}
     outline:none;
+    overflow:hidden;
     @media (max-width: 991px){
         max-width:90%;
     }
@@ -125,6 +128,7 @@ export const ImageTrailer = styled(Img)`
     font-size:30px;
     top: 60px;
     right:60px;
+    z-index:20;
     cursor:pointer;
     ${'' /* filter: invert(1); */}
     max-width:32px;

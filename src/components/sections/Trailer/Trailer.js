@@ -50,9 +50,10 @@ const Trailer = () => {
               </ImageBg>
             </VideoSlider>
             <VideoPlayer isClicked={clicked}>
-                    <Source ref={el => vid = el} src={tstav} type="video/mp4" controls="true" autoplay/>
-                   <CloseIcon onClick={openVideo}/>
+                    <Source  src={tstav} ref={el => vid = el} type="video/mp4"  controls="true" autoplay/>
+                    <CloseIcon onClick={openVideo}/>
             </VideoPlayer>
+           
             <Button primary="true" round="true">See All Book Trailer</Button>
        </Container>
     )
